@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Cinnamoroll</h1>
+
+    <div class="vidio">
+      <h2 id="video">૮₍´｡ᵔ ꈊ ᵔ｡`₎ა</h2>
+      <video
+        controls
+        width="300"
+        height="500"
+        loop
+        autoplay
+        muted
+        preload="auto"
+      >
+        <source src="video.mp4" type="video/mp4" />
+        <track kind="captions" src="video.mp4" srclang="en" label="English" />
+      </video>
+    </div>
+
+    <div class="foto">
+      <h2 id="gambar">૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</h2>
+      <picture>
+        <source media="(max-width: 600px)" srcset="gambar1.jpg" />
+        <source media="(max-width: 1200px)" srcset="gambar2.jpg" />
+        <img src="gambar1.jpg" alt="pic 1" />
+      </picture>
+    </div>
+
+    <div class="suara">
+      <h2 id="audio">૮₍ ˶•⤙•˶ ₎ა</h2>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mp3" />
+      </audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
